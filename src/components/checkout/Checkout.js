@@ -42,7 +42,7 @@ export default ({ history }) => {
 
                             </div>
                         </div>
-                        <StripeCheckout stripeKey={process.env.REACT_APP_KEY} token={makePayment} name="Bill Payment" amount={product.amount * 100} >
+                        <StripeCheckout stripeKey={process.env.REACT_APP_KEY} token={makePayment} name="Bill Payment" amount={product.price * 100} >
                             <button type="button" className="btn btn-md btn-success">Checkout</button>
                         </StripeCheckout>
                     </div>

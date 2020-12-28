@@ -17,7 +17,6 @@
     "react-scripts": "4.0.1",
     "react-stripe-checkout": "^2.6.3",
     "react-verification-code-input": "^1.2.9",
-    "swup": "^2.0.14",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
