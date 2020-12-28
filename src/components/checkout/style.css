@@ -1,0 +1,19 @@
+.main{
+    height: 100vh;
+}
+.main:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgb(250, 233, 233);
+  }
+.head{
+    height: 10vh;
+}
+.body{
+    height: 90vh;
+    z-index:5;
+    color: white;
+    position: relative;
+}

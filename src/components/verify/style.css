@@ -1,0 +1,54 @@
+
+.main{
+    height: 100vh;
+}
+.main:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: black;
+  }
+.head{
+    height: 10vh;
+}
+.body{
+    margin-top: -5%;
+    height: 90vh;
+    z-index:5;
+    color: white;
+    position: relative;
+}
+input{
+    background-color: black;
+    
+}
+.styles_react-code-input__CRulA > input{
+    color: white;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-bottom: 2px solid #1AE9B4;
+   
+}
+.styles_react-code-input__CRulA > input:last-child{
+    border-right: black;
+    border-radius: 0;
+}
+.styles_react-code-input__CRulA > input:first-child{
+    border-right: black;
+    border-radius: 0;
+}
+.styles_react-code-input__CRulA > input:focus{
+    
+    border-top: black;
+    border-left: black;
+    border-right: black;
+   border-radius: 0;
+}
+.btn-success{
+    width: 25%;
+}
+.dark{
+    color: black;
+}

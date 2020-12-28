@@ -1,0 +1,50 @@
+.main{
+    height: 100vh;
+}
+.main:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: black;
+  }
+.head{
+    height: 10vh;
+}
+.body{
+    height: 90vh;
+    z-index:5;
+    color: white;
+    position: relative;
+}
+.form-group{
+    margin: auto;
+}
+
+.PhoneInputInput {
+    height: 40px;
+    font-size: 25px;
+    border-bottom: 2px solid #1AE9B4;
+    text-align: center;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+.btn{
+    margin-top: 10%;
+    width: 15%;
+    background-color:#1AE9B4 !important;
+}
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.error{
+    color: black;
+}
+.PhoneInputCountryIcon{
+    --PhoneInputCountryFlag-height: 2em;
+}
