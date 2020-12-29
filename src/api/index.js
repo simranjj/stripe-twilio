@@ -32,7 +32,7 @@ export async function checkoutAPI (payload) {
     try {
         const response = await axios({
             method: "POST",
-            url: `${STRIPE_TWILIO_ENDPOINT}/checkout`,
+            url: `${STRIPE_TWILIO_ENDPOINT}/payment`,
             data: payload,
         })
         if (response.status === StatusCodes.OK) {

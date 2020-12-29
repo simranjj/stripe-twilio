@@ -12,8 +12,8 @@ export default ({ history }) => {
 
     const makePayment = (token) => {
         const payload = { token, product }
-        checkoutAPI(payload).then(response => {
-            if (response)
+        return checkoutAPI(payload).then(response => {
+            if (response && response.id)
                 history.push({ pathname: "/success" })
         });
 
@@ -32,7 +32,7 @@ export default ({ history }) => {
                         </div>
                         <div className="row">
                             <div className="col">
-                                <img src="/assests/bill.jpg" class="img-fluid w-100 h-100" alt="" />
+                                <img src="/assests/bill.jpg" className="img-fluid w-100 h-100" alt="" />
                             </div>
                             <div className="col">
                                 <p className="lead text-left">Monthly Bill Payment</p>
