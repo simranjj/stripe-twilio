@@ -1,6 +1,7 @@
 import StripeCheckout from 'react-stripe-checkout';
 import { checkoutAPI } from '../../api/index'
 import React, { useState } from 'react'
+import { StatusCodes } from 'http-status-codes';
 
 export default ({ history }) => {
 
@@ -13,7 +14,7 @@ export default ({ history }) => {
     const makePayment = (token) => {
         const payload = { token, product }
         return checkoutAPI(payload).then(response => {
-            if (response && response.id)
+            if (response.status === StatusCodes.OK)
                 history.push({ pathname: "/success" })
         });
 

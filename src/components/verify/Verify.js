@@ -22,7 +22,6 @@ export default ({ history, location }) => {
                 code
             }
             verifyUserCodeAPI(payload).then(response => {
-                console.log(response)
                 if (response.status === StatusCodes.BAD_REQUEST) {
                     setError("Something went wrong. Re-send Code ? ")
                 } else if (response.status === StatusCodes.OK && response.data.valid) {
