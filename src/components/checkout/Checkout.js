@@ -6,12 +6,13 @@ export default ({ history }) => {
 
     const [product, setProduct] = useState({
         name: 'Phone Bill Payment',
-        price: 11,
+        price: 11000,
         productBy: 'Simran'
     })
 
     const makePayment = (token) => {
         const payload = { token, product }
+        console.log(product.price * 100)
         return checkoutAPI(payload).then(response => {
             if (response && response.id)
                 history.push({ pathname: "/success" })
@@ -42,7 +43,7 @@ export default ({ history }) => {
 
                             </div>
                         </div>
-                        <StripeCheckout stripeKey={process.env.REACT_APP_KEY} token={makePayment} name="Bill Payment" amount={product.price * 100} >
+                        <StripeCheckout stripeKey={process.env.REACT_APP_KEY} token={makePayment} name="Bill Payment" amount={product.price} >
                             <button type="button" className="btn btn-md btn-success">Checkout</button>
                         </StripeCheckout>
                     </div>
