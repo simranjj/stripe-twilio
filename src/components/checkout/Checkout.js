@@ -6,13 +6,12 @@ export default ({ history }) => {
 
     const [product, setProduct] = useState({
         name: 'Phone Bill Payment',
-        price: 11000,
+        price: 100,
         productBy: 'Simran'
     })
 
     const makePayment = (token) => {
         const payload = { token, product }
-        console.log(product.price * 100)
         return checkoutAPI(payload).then(response => {
             if (response && response.id)
                 history.push({ pathname: "/success" })
@@ -37,9 +36,9 @@ export default ({ history }) => {
                             </div>
                             <div className="col">
                                 <p className="lead text-left">Monthly Bill Payment</p>
-                                <p className="lead text-left">Charges : $ 10</p>
-                                <p className="lead text-left">Taxes: $ 1</p>
-                                <p className="lead text-left">Total: $ 11</p>
+                                <p className="lead text-left">Charges : $ 1</p>
+                                <p className="lead text-left">Taxes: $ 0</p>
+                                <p className="lead text-left">Total: $ 1</p>
 
                             </div>
                         </div>
