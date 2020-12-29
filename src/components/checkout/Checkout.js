@@ -6,7 +6,7 @@ export default ({ history }) => {
 
     const [product, setProduct] = useState({
         name: 'Phone Bill Payment',
-        price: 10.89,
+        price: 11,
         productBy: 'Simran'
     })
 
@@ -37,8 +37,8 @@ export default ({ history }) => {
                             <div className="col">
                                 <p className="lead text-left">Monthly Bill Payment</p>
                                 <p className="lead text-left">Charges : $ 10</p>
-                                <p className="lead text-left">Taxes: $ 0.89</p>
-                                <p className="lead text-left">Total: $ 10.89</p>
+                                <p className="lead text-left">Taxes: $ 1</p>
+                                <p className="lead text-left">Total: $ 11</p>
 
                             </div>
                         </div>
